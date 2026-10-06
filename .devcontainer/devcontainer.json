@@ -1,0 +1,13 @@
+{
+  "name": "SDC-BIDS-fMRI",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree && pip install -r requirements.txt && python -m ipykernel install --user --name=sdc_bids_fmri --display-name 'SDC-BIDS-fMRI'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
